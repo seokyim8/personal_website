@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe.tsx";
 import Projects from "./Projects.tsx";
 import Profile from "./Profile.tsx";
 import Navbar from "./Navbar.tsx";
+import Leftbar from "./Leftbar.tsx";
 
 const App = () =>{
     return (
@@ -12,6 +13,7 @@ const App = () =>{
             <Profile />
             <AboutMe />
             <Projects />
+            <Leftbar />
         </div>
     );
 }

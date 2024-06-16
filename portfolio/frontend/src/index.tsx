@@ -1,2 +1,2 @@
 import "./components/App.tsx";
-import "./style.css"
+import "./styles.css"
