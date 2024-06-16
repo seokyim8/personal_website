@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+
+.square { /* TODO: CHANGE LATER! */
+    width: 200px;
+    height: 200px;
+    background: orange;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .fill-animation {
+      animation: wipe-enter 1s 1;
+    }
+  }
+
+  /* .dark_blue_background {
+    background-color: #516087;
+  }
+
+  .profile_container {
+    justify-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+  }
+
+  .profile_text {
+    color: white;
+    font-family: monospace;
+  } */

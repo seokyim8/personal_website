@@ -1,0 +1,1 @@
+## This is where I store information about how I built my personal website.

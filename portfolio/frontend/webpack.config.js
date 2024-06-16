@@ -17,18 +17,17 @@ module.exports = {
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
+
   },
   optimization: {
     minimize: true,
   },
   plugins: [
     new webpack.DefinePlugin({
-      "process.env": {
-        NODE_ENV: JSON.stringify("development"),
-      },
+      "process.env.NODE_ENV": JSON.stringify("development")
     }),
   ],
 };
