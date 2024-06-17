@@ -1,16 +1,25 @@
 import React from "react";
+import { InView, useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
+    const { ref, inView, entry } = useInView({ // Object destructuring
+        threshold: 0.4,
+    });
+
+    const [ref2, inView2, entry2 ] = useInView({ // Array destructuring
+        threshold: 0.4,
+    });
+
     return (
         <div className="w-full h-screen justify-center flex flex-col font-sans">
-            <span className="text-3xl font-semibold mx-auto my-16 font-mono">About Me</span>
-            <div className="flex flex-row w-full h-screen justify-center">
+            <div className={"text-3xl font-semibold flex justify-center font-mono w-full py-8 mb-8 transition duration-500 " + (inView2? "about_me_passed" : "")}>About Me</div>
+            <div className="flex flex-row w-full h-screen justify-center" ref={ref2}>
                 <div className="flex flex-col justify-start w-5/12">
                     <div className="flex flex-row justify-center gap-8">
                         <div className="my-auto flex flex-col">
                             <img src="/static/images/profile_picture.jpg" alt="profile_image" className="rounded-full" width={300} />
                         </div>
-                        <div className="my-auto max-w-72 ml-4">
+                        <div className="my-auto max-w-72 ml-10">
                             <div className="font-bold text-xl mb-4">
                                 So who am I?
                             </div>
@@ -21,7 +30,7 @@ const AboutMe = () => {
                             </span>
                         </div>
                     </div>
-                    <div className="mx-auto flex flex-row justify-center gap-14 my-24 bg-slate-50 p-6 rounded-2xl">
+                    <div className={"mx-auto flex flex-row justify-center gap-14 my-24 p-6 rounded-2xl transition duration-700 " + (inView2? "profile" : "")}>
                         <div className="flex flex-col gap-2 max-w-72">
                             <span className="font-semibold text-lg">Profile</span>
                             <span>Currently open for data science/software engineering related job opportunities. If you think I am a good fit,
@@ -65,15 +74,16 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="w-10"></div>
-                <div className="flex flex-col justify-start w-96">
+                <div ref={ref} className="flex flex-col justify-start w-96">
                     <span className="font-semibold text-lg mb-6 p-1">TECHNICAL SKILLS</span>
                     <div className="hover:bg-teal-50 p-2 rounded-xl mb-8">
                         <div className="flex justify-between mb-1">
                             <span className="text-base font-medium text-green-700 dark:text-white">Java</span>
                             <span className="text-sm font-medium text-green-700 dark:text-white">90%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView? "in-wipe-right" : "")}>
                             <div className="bg-green-600 h-2.5 rounded-full w-11/12" />
+                            <span>{String(inView)}</span>
                         </div>
                     </div>
 
@@ -82,7 +92,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-green-700 dark:text-white">Python</span>
                             <span className="text-sm font-medium text-green-700 dark:text-white">80%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView? "in-wipe-right" : "")}>
                             <div className="bg-green-600 h-2.5 rounded-full w-4/5" />
                         </div>
                     </div>
@@ -92,7 +102,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-blue-700 dark:text-white">Js/Ts/React</span>
                             <span className="text-sm font-medium text-blue-700 dark:text-white">75%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView? "in-wipe-right" : "")}>
                             <div className="bg-blue-600 h-2.5 rounded-full w-3/4" />
                         </div>
                     </div>
@@ -103,7 +113,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-blue-700 dark:text-white">SQL</span>
                             <span className="text-sm font-medium text-blue-700 dark:text-white">60%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView? "in-wipe-right" : "")}>
                             <div className="bg-blue-600 h-2.5 rounded-full w-2/3" />
                         </div>
                     </div>
@@ -113,7 +123,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-blue-700 dark:text-white">HTML/CSS</span>
                             <span className="text-sm font-medium text-blue-700 dark:text-white">60%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView? "in-wipe-right" : "")}>
                             <div className="bg-blue-600 h-2.5 rounded-full w-2/3" />
                         </div>
                     </div>
@@ -123,7 +133,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-blue-700 dark:text-white">AWS</span>
                             <span className="text-sm font-medium text-blue-700 dark:text-white">50%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 "+ (inView? "in-wipe-right" : "")}>
                             <div className="bg-blue-600 h-2.5 rounded-full w-1/2" />
                         </div>
                     </div>
@@ -133,7 +143,7 @@ const AboutMe = () => {
                             <span className="text-base font-medium text-blue-700 dark:text-white">R</span>
                             <span className="text-sm font-medium text-blue-700 dark:text-white">50%</span>
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700" transition-style="in:wipe:right">
+                        <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 "+ (inView? "in-wipe-right" : "")}>
                             <div className="bg-blue-600 h-2.5 rounded-full w-1/2" />
                         </div>
                     </div>

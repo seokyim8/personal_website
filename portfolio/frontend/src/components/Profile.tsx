@@ -1,4 +1,5 @@
 import React from "react";
+import HorizontalBar from "./HorizontalBar.tsx";
 
 const Profile = () => {
     return (
@@ -19,6 +20,7 @@ const Profile = () => {
                 </div>
                 <span className="text-lg mt-6">I build tools for data anlysis, machine learning, </span>
                 <span className="text-lg mt-1">and engaging digital experiences.</span>
+                <HorizontalBar />
             </div>
             <div className="flex flex-col justify-center">
                 <img src="/static/images/fox-blurred.png" width={400} />
