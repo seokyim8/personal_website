@@ -1,10 +1,6 @@
 import React, { ReactEventHandler, SyntheticEvent } from "react";
-import { useEffect } from "react";
 
 const Leftbar = () => {
-    useEffect(() => {
-
-    });
 
     return (
         <div className="rounded-t-full bg-slate-500 flex flex-col gap-10 sticky bottom-0 left-0 max-w-fit p-4 ml-6 expand_animation" transition-style="in:wipe:up">
