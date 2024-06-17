@@ -2,12 +2,17 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <nav className="bg-slate-900 sticky top-0 duration-300 justify-end flex p-4 z-20">
-            <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 mx-4 gap-3">
+        <nav className="bg-slate-900 sticky top-0 duration-300 justify-center flex pt-4 z-20 flex-col mb-0">
+            <div className="items-center justify-center hidden w-full md:flex md:w-auto mx-4 gap-3">
                 <ul className="flex flex-row gap-7 my-2 text-md">
                     <li>
                         <a href="#" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition">
-                            Profile
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition">
+                            About
                         </a>
                     </li>
                     <li>
@@ -22,11 +27,12 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <div className="block md:hidden">
+            <div className="block md:hidden justify-center">
                 <a href="#" className="p-4 text-white rounded hover:text-teal-200 transition font-semibold">
                     Resume
                 </a>
             </div>
+            <div className="bg-white w-full h-0.5 mt-3" transition-style="appear"/>
         </nav>
     );
 }
