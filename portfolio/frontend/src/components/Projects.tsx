@@ -7,7 +7,7 @@ const Projects = () => {
     });
 
     return (
-        <div className="flex flex-col justify-evenly h-screen" ref={ref}>
+        <div id="projects" className="flex flex-col justify-evenly h-screen" ref={ref}>
             <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} />
             <div className="flex flex-col justify-center">
                 <div className="mx-auto text-3xl font-semibold font-mono z-10">Projects</div>

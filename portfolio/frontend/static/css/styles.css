@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   /* For profile's intro */
   @keyframes circle-in-hesitate {
     0% {
@@ -18,6 +22,46 @@
   
   [transition-style="in:circle:hesitate"] {
     animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  }
+
+  @keyframes appear_half {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 0.5;
+    }
+  }
+
+  [transition-style="appear_half"] {
+    animation: 3s cubic-bezier(.25, 1, .30, 1) appear_half both;
+    animation-delay: 1.3s;
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .typed{
+    animation: typing;
+    animation-timing-function: steps(30, end);
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .typed-delayed {
+    animation: typing;
+    animation-timing-function: steps(30, end);
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   /* For Left bar */

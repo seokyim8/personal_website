@@ -13,7 +13,7 @@ const AboutMe = () => {
     // TODO: CHANGE THE ABOUT ME FROM FLEX TO GRID FORMATTING!
     return (
         <div className="w-full h-screen justify-start flex flex-col font-sans">
-            <div className={"text-3xl font-semibold flex justify-center font-mono w-full mt-54 py-8 mb-16 transition duration-500 " + (inView2 ? "about_me_passed" : "")}>About Me</div>
+            <div id="about_me" className={"text-3xl font-semibold flex justify-center font-mono w-full mt-54 py-8 mb-16 transition duration-500 " + (inView2 ? "about_me_passed" : "")}>About Me</div>
             <div className="flex flex-row w-full h-screen justify-center" ref={ref2}>
                 <div className="flex flex-col justify-center w-5/12">
                     <div className="flex flex-row justify-center gap-8">
@@ -186,8 +186,14 @@ const AboutMe = () => {
                             </div>
                         </div>
                     </div>
-
                 </div>
+            </div>
+            <div className="mx-auto my-auto">
+                <a href="#projects" className="rounded-full bg-slate-300 opacity-50 w-fit h-fit p-4 flex flex-row justify-center" transition-style="appear_half">
+                    <svg className="w-9 h-9 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" d="m19 9-7 7-7-7" />
+                    </svg>
+                </a>
             </div>
         </div>
     );
