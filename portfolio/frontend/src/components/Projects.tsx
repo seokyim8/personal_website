@@ -74,7 +74,7 @@ const Projects = () => {
                         alt="Product" className="h-80 object-cover rounded-t-xl p-2" />
                     <div className="px-4 py-2 flex flex-col">
                         <p className="text-lg font-bold text-black capitalize font-mono ">Photo Management App</p>
-                        <span className="text-gray-400 mr-3 text-xs capitalize font-mono ">Java, JavaFX11</span>
+                        <span className="text-gray-400 mr-3 text-xs capitalize font-mono ">Java, JavaFX11, UML</span>
                     </div>
                 </a>
             </div>
