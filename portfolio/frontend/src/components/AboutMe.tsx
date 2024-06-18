@@ -141,7 +141,7 @@ const AboutMe = () => {
                         <div className=" bg-slate-100 rounded-xl py-2 px-4 font-bold text-lg">Profile</div>
                         <div className="p-2 mt-3">
                             Currently open for data science/software engineering related job opportunities. If you think I am a good fit,
-                            contact me through <a href="#" className="text-teal-500 hover:text-teal-200">seokyim8@gmail.com</a>.
+                            please contact me through <a href="#" className="text-teal-500 hover:text-teal-200">seokyim8@gmail.com</a>.
                         </div>
                     </div>
 
