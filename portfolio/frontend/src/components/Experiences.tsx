@@ -7,8 +7,8 @@ const Experiences = () => {
     });
 
     return (
-        <div id="projects" className="flex flex-col justify-center h-screen" ref={ref}>
-            <div className="font-semibold text-3xl flex flex-row justify-center">
+        <div id="experiences" className="flex flex-col justify-center h-screen" ref={ref}>
+            <div className="font-semibold text-4xl flex flex-row justify-center">
                 Experiences
             </div>
         </div>

@@ -10,7 +10,7 @@ const Projects = () => {
         <div id="projects" className="flex flex-col justify-evenly h-screen" ref={ref}>
             <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} />
             <div className="flex flex-col justify-center">
-                <div className="mx-auto text-3xl font-semibold font-mono z-10">Projects</div>
+                <div className="mx-auto text-4xl font-semibold font-mono z-10">Projects</div>
                 <div className="mx-auto text-xl pt-4 mb font-mono z-10">Take a look at my works!</div>
             </div>
 
