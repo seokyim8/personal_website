@@ -13,7 +13,7 @@ const Experiences = () => {
                     Experiences / Awards
                 </div>
                 <div className="font-semibold text-4xl mx-auto">
-                    Below are what I have participated in.
+                    Below is what I have participated in.
                 </div>
             </div>
 

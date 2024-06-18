@@ -16,6 +16,11 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
+                        <a href="#experiences" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
                         <a href="#projects" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition">
                             Projects
                         </a>
@@ -32,7 +37,7 @@ const Navbar = () => {
                     Resume
                 </a>
             </div>
-            <div className="bg-white w-full h-0.5 mt-3" transition-style="appear"/>
+            <div className="bg-white w-full h-0.5 mt-3" transition-style="appear" />
         </nav>
     );
 }
