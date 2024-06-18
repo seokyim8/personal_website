@@ -13,14 +13,14 @@ const AboutMe = () => {
     // TODO: CHANGE THE ABOUT ME FROM FLEX TO GRID FORMATTING!
     return (
         <div id="about_me" className="flex flex-col">
-            <div className={"text-4xl font-semibold flex justify-center font-mono w-full mt-54 py-16 mb-16 transition duration-500 " + (inView2 ? "about_me_passed" : "")}>About Me</div>
+            <div className={"text-4xl font-semibold flex justify-center font-mono w-full mt-54 py-10 mb-16 transition duration-500 " + (inView2 ? "about_me_passed" : "")}>About Me</div>
             <div className="grid max-w-7xl grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-3 font-sans mx-auto my-auto gap-x-32 gap-y-8" ref={ref2}>
                 <div className="row-span-1 col-span-1 md:col-span-2 grid grid-cols-1 grid-rows-2 md:grid-rows-1 grid-flow-col md:grid-flow-row md:grid-cols-2">
                     <div className="mx-auto my-auto">
                         <img src="/static/images/profile_picture.jpg" alt="profile_image" className="rounded-full my-auto" width={250} />
                     </div>
                     <div className="mx-auto md:my-auto">
-                        <div className="font-bold text-xl">
+                        <div className="font-bold text-xl py-2">
                             So who am I?
                         </div>
                         <div className="max-w-80">
