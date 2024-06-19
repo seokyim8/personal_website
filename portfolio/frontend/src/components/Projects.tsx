@@ -1,4 +1,4 @@
-import React,{ useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { InView, useInView } from "react-intersection-observer";
 
 const Projects = () => {
@@ -11,7 +11,7 @@ const Projects = () => {
     });
 
     useEffect(() => {
-        if(ref2.current){
+        if (ref2.current) {
             setHeight(ref2.current.clientHeight);
         }
     }, []);
@@ -19,7 +19,7 @@ const Projects = () => {
     return (
         <div id="projects" className="flex flex-col justify-evenly" ref={ref2}>
             <div ref={ref} />
-            <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} style={{height: height}} />
+            <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} style={{ height: height }} />
             <div className="flex flex-col justify-center my-8">
                 <div className="mx-auto text-4xl font-semibold font-mono z-10">Projects</div>
                 <div className="mx-auto text-xl pt-4 mb font-mono z-10">Take a look at my works!</div>
@@ -52,8 +52,12 @@ const Projects = () => {
                 </a>
                 <a href="#" className="flex flex-col justify-evenly bg-white shadow-md rounded-xl duration-500 
                 hover:scale-110 hover:shadow-xl h-96 w-96 pb-2">
-                    <img src="/static/images/steam_data_pipeline.png"
-                        alt="Product" className="h-80 object-cover rounded-t-xl p-4" />
+                    <div className="flex felx-row justify-around h-80">
+                        <video className="px-2" loop muted autoPlay>
+                            <source src="/static/images/steam.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+
                     <div className="px-4 py-2 flex flex-col">
                         <p className="text-lg font-bold text-black capitalize font-mono ">Steam Data Pipeline</p>
                         <span className="text-gray-400 mr-3 text-xs capitalize font-mono ">Python, SQL, Docker, AWS, Selenium, Apache-superset</span>
