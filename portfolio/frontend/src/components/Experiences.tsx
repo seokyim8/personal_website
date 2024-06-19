@@ -21,7 +21,7 @@ const Experiences = () => {
                 <span className="font-bold text-2xl mb-6">Experiences</span>
                 <div className="flex flex-row font-mono text-sm mt-2 gap-6">
                     <svg className="h-8 w-8 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                     <div className="flex flex-col justify-start gap-y-2">
                         <div className="flex flex-col justify-center">
@@ -37,7 +37,7 @@ const Experiences = () => {
 
                 <span className="font-bold text-2xl mt-16 mb-6">Activities / Awards</span>
                 <div className="flex flex-row font-mono text-sm mt-2 mb-4 gap-6">
-                    <svg className="h-8 w-8 text-amber-500 my-auto" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <line x1="8" y1="21" x2="16" y2="21" />  <line x1="12" y1="17" x2="12" y2="21" />  <line x1="7" y1="4" x2="17" y2="4" />  <path d="M17 4v8a5 5 0 0 1 -10 0v-8" />  <circle cx="5" cy="9" r="2" />  <circle cx="19" cy="9" r="2" /></svg>
+                    <svg className="h-8 w-8 text-amber-500 my-auto" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <line x1="8" y1="21" x2="16" y2="21" />  <line x1="12" y1="17" x2="12" y2="21" />  <line x1="7" y1="4" x2="17" y2="4" />  <path d="M17 4v8a5 5 0 0 1 -10 0v-8" />  <circle cx="5" cy="9" r="2" />  <circle cx="19" cy="9" r="2" /></svg>
                     <div className="flex flex-col justify-start gap-y-2">
                         <span className="font-semibold text-lg">1st place in the 2021 Rutgers Quinlan Competition for data predictions</span>
                         <span className="text-base">
@@ -47,7 +47,7 @@ const Experiences = () => {
                 </div>
 
                 <div className="flex flex-row font-mono text-sm mt-4 mb-4 gap-6">
-                    <svg className="h-8 w-8 text-red-500 my-auto" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="12" cy="9" r="6" />  <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(-30 12 9)" />  <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(30 12 9)" /></svg>
+                    <svg className="h-8 w-8 text-red-500 my-auto" width="24" height="24" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <circle cx="12" cy="9" r="6" />  <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(-30 12 9)" />  <polyline points="9 14.2 9 21 12 19 15 21 15 14.2" transform="rotate(30 12 9)" /></svg>
                     <div className="flex flex-col justify-start gap-y-2">
                         <span className="font-semibold text-lg">Hall of Fame in Data 101</span>
                         <span className="text-base">

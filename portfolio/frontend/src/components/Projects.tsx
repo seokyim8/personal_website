@@ -1,22 +1,33 @@
-import React from "react";
+import React,{ useRef, useState, useEffect } from "react";
 import { InView, useInView } from "react-intersection-observer";
 
 const Projects = () => {
+    const [height, setHeight] = useState(0);
+    const ref2 = useRef<any>(null);
+    const ref3 = useRef<any>(null);
+
     const [ref, inView, entry] = useInView({
         threshold: 0.2,
     });
 
+    useEffect(() => {
+        if(ref2.current){
+            setHeight(ref2.current.clientHeight);
+        }
+    }, []);
+
     return (
-        <div id="projects" className="flex flex-col justify-evenly h-screen" ref={ref}>
-            <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} />
-            <div className="flex flex-col justify-center">
+        <div id="projects" className="flex flex-col justify-evenly" ref={ref2}>
+            <div ref={ref} />
+            <div className={"absolute h-full w-screen bg-slate-100 z-0 " + (inView ? "in-wipe-left" : "")} style={{height: height}} />
+            <div className="flex flex-col justify-center my-8">
                 <div className="mx-auto text-4xl font-semibold font-mono z-10">Projects</div>
                 <div className="mx-auto text-xl pt-4 mb font-mono z-10">Take a look at my works!</div>
             </div>
 
             <div className={"bg-slate-800 w-full max-w-5xl h-0.5 mx-auto " + (inView ? "in-wipe-right-faster" : "")} />
 
-            <div className="flex flex-row justify-center gap-8 flex-wrap max-w-7xl mx-auto pb-4 z-10">
+            <div className="flex flex-row justify-center gap-8 flex-wrap max-w-7xl mx-auto z-10 py-12">
                 <a href="#" className="flex flex-col justify-evenly bg-white shadow-md rounded-xl duration-500 
                 hover:scale-110 hover:shadow-xl h-96 w-96 pb-2">
                     <img src="/static/images/fox_image.png"

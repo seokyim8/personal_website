@@ -1,5 +1,5 @@
-from python:3.12
-from node:lts
+FROM python:3.12
+FROM node:lts
 
 # Setting environment variables for DJANGO
 ENV PYTHONUNBUFFERED=1
@@ -28,3 +28,4 @@ CMD ["npm", "run", "dev"]
 WORKDIR /web_app
 CMD ["python3", "./manage.py", "runserver", "0.0.0.0:8001"]
 
+# TODO: MIGHT HAVE TO MODIFY PERMISSIONS FOR WEBPACK
