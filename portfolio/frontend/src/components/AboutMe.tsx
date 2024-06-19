@@ -21,7 +21,7 @@ const AboutMe = () => {
                     </div>
                     <div className="mx-auto md:my-auto">
                         <div className="font-bold text-xl py-2">
-                            So who am I?
+                            Let me introduce myself...
                         </div>
                         <div className="max-w-80">
                             I am a data science/software engineering enthusiast from Rutgers University.
@@ -88,10 +88,10 @@ const AboutMe = () => {
                             <div className="hover:bg-teal-50 p-1 rounded-xl mb-8">
                                 <div className="flex justify-between mb-1">
                                     <span className="text-base font-medium text-blue-700 dark:text-white">AWS</span>
-                                    <span className="text-sm font-medium text-blue-700 dark:text-white">50%</span>
+                                    <span className="text-sm font-medium text-blue-700 dark:text-white">60%</span>
                                 </div>
                                 <div className={"w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 " + (inView ? "in-wipe-right" : "")}>
-                                    <div className="bg-blue-600 h-2.5 rounded-full w-1/2" />
+                                    <div className="bg-blue-600 h-2.5 rounded-full w-2/3" />
                                 </div>
                             </div>
 
