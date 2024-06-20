@@ -138,7 +138,7 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                     <div className="w-full h-full flex flex-col my-auto">
                         <p className="text-lg font-bold text-white capitalize font-mono flex felx-row justify-start">Self-learning Tetris AI</p>
                         <span className="text-gray-300 mr-3 text-xs capitalize font-mono flex flex-row justify-start">Python, Pytorch, DQN, RL, ML, Neural Networks, Java</span>
-                        <a target="_blank" href="https://github.com/seokyim8/personal_website"
+                        <a target="_blank" href="https://github.com/seokyim8/Tetris"
                             className="text-base text-teal-500 capitalize font-mono flex felx-row justify-start hover:underline hover:text-teal-200 transition duration-200">
                             https://github.com/seokyim8/Tetris
                         </a>
@@ -174,7 +174,7 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                     <div className="w-full h-full flex flex-col my-auto">
                         <p className="text-lg font-bold text-white capitalize font-mono flex felx-row justify-start">Steam Data Pipeline</p>
                         <span className="text-gray-300 mr-3 text-xs capitalize font-mono ">Python, SQL, Docker, AWS, Selenium, Apache-superset, Scrapy, RDS</span>
-                        <a target="_blank" href="https://github.com/seokyim8/personal_website"
+                        <a target="_blank" href="https://github.com/seokyim8/Steam_data_pipeline"
                             className="text-base text-teal-500 capitalize font-mono flex felx-row justify-start hover:underline hover:text-teal-200 transition duration-200">
                             https://github.com/seokyim8/Steam_data_pipeline
                         </a>
@@ -208,7 +208,7 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                     <div className="w-full h-full flex flex-col my-auto">
                         <p className="text-lg font-bold text-white capitalize font-mono flex felx-row justify-start">Social Media Website for TEKKEN 8</p>
                         <span className="text-gray-300 mr-3 text-xs capitalize font-mono ">Python, React.js, Django, Github Actions, AWS, Docker, Webpack, Tailwind, SQLite, NLTK</span>
-                        <a target="_blank" href="https://github.com/seokyim8/personal_website"
+                        <a target="_blank" href="https://github.com/seokyim8/Tekken8_social_media_platform"
                             className="text-base text-teal-500 capitalize font-mono flex felx-row justify-start hover:underline hover:text-teal-200 transition duration-200">
                             https://github.com/seokyim8/Tekken8_social_media_platform
                         </a>
@@ -241,7 +241,7 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                     <div className="w-full h-full flex flex-col my-auto">
                         <p className="text-lg font-bold text-white capitalize font-mono flex felx-row justify-start">Chess on Android</p>
                         <span className="text-gray-300 mr-3 text-xs capitalize font-mono ">Java, Android Studio</span>
-                        <a target="_blank" href="https://github.com/seokyim8/personal_website"
+                        <a target="_blank" href="https://github.com/seokyim8/Chess"
                             className="text-base text-teal-500 capitalize font-mono flex felx-row justify-start hover:underline hover:text-teal-200 transition duration-200">
                             https://github.com/seokyim8/Chess
                         </a>
@@ -270,9 +270,9 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                     <div className="w-full h-full flex flex-col my-auto">
                         <p className="text-lg font-bold text-white capitalize font-mono flex felx-row justify-start">Photo Management App</p>
                         <span className="text-gray-300 mr-3 text-xs capitalize font-mono ">Java, JavaFX11, UML</span>
-                        <a target="_blank" href="https://github.com/seokyim8/personal_website"
+                        <a target="_blank" href="https://github.com/seokyim8/Photos-Application"
                             className="text-base text-teal-500 capitalize font-mono flex felx-row justify-start hover:underline hover:text-teal-200 transition duration-200">
-                            https://github.com/seokyim8
+                            https://github.com/seokyim8/Photos-Application
                         </a>
                         <div className="flex flex-col justify-center h-96 w-96 bg-white rounded-2xl p-4 my-4 mx-auto">
                             <img src="/static/images/photos_app.png"
