@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import AboutMe from "./AboutMe.tsx";
 import Projects from "./Projects.tsx";
@@ -8,14 +8,16 @@ import Leftbar from "./Leftbar.tsx";
 import Experiences from "./Experiences.tsx";
 import ContactMe from "./ContactMe.tsx";
 
-const App = () =>{
+const App = () => {
+    const [projectClicked, setProjectClicked] = useState(false);
+
     return (
-        <div className="w-full h-full">
+        <div className={"w-full h-full"}>
             <Navbar />
             <Profile />
             <AboutMe />
             <Experiences />
-            <Projects />
+            <Projects projectClicked={projectClicked} setProjectClicked={setProjectClicked} />
             {/* <Leftbar /> */}
             <ContactMe />
         </div>

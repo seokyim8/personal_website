@@ -3,158 +3,179 @@
 @tailwind utilities;
 
 
-  html {
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+/* For profile's intro */
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%);
   }
 
-  /* For profile's intro */
-  @keyframes circle-in-hesitate {
-    0% {
-      clip-path: circle(0%);
-    }
-    40% {
-      clip-path: circle(40%);
-    }
-    100% {
-      clip-path: circle(125%);
-    }
-  }
-  
-  [transition-style="in:circle:hesitate"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+  40% {
+    clip-path: circle(40%);
   }
 
-  @keyframes appear_half {
-    from {
-      opacity: 0;
-    }
-    to{
-      opacity: 0.5;
-    }
+  100% {
+    clip-path: circle(125%);
+  }
+}
+
+[transition-style="in:circle:hesitate"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) circle-in-hesitate both;
+}
+
+@keyframes appear_half {
+  from {
+    opacity: 0;
   }
 
-  [transition-style="appear_half"] {
-    animation: 3s cubic-bezier(.25, 1, .30, 1) appear_half both;
-    animation-delay: 1.3s;
+  to {
+    opacity: 0.5;
+  }
+}
+
+[transition-style="appear_half"] {
+  animation: 3s cubic-bezier(.25, 1, .30, 1) appear_half both;
+  animation-delay: 1.3s;
+}
+
+@keyframes typing {
+  from {
+    width: 0
   }
 
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%
+  }
+}
+
+.typed {
+  animation: typing;
+  animation-timing-function: steps(30, end);
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typed-delayed {
+  animation: typing;
+  animation-timing-function: steps(30, end);
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* For Left bar */
+@keyframes wipe-in-up {
+  from {
+    clip-path: inset(100% 0 0 0);
   }
 
-  .typed{
-    animation: typing;
-    animation-timing-function: steps(30, end);
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+[transition-style="in:wipe:up"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+  animation-delay: 1.3s;
+}
+
+/* For nav bar */
+@keyframes appear {
+  from {
+    opacity: 0;
   }
 
-  .typed-delayed {
-    animation: typing;
-    animation-timing-function: steps(30, end);
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    width: 0;
-    white-space: nowrap;
-    overflow: hidden;
+  to {
+    opacity: 100;
+  }
+}
+
+[transition-style="appear"] {
+  animation: 3s cubic-bezier(.25, 1, .30, 1) appear both;
+  animation-delay: 1.3s;
+}
+
+/* For percentage bars */
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0);
   }
 
-  /* For Left bar */
-  @keyframes wipe-in-up {
-    from {
-      clip-path: inset(100% 0 0 0);
-    }
-    to {
-      clip-path: inset(0 0 0 0);
-    }
+  to {
+    clip-path: inset(0 0 0 0);
   }
-  
-  [transition-style="in:wipe:up"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
-    animation-delay: 1.3s;
+}
+
+[transition-style="in:wipe:right"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+
+.in-wipe-right {
+  animation: 3.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+}
+
+/* For About Me */
+.about_me_passed {
+  background-color: rgb(227, 255, 222);
+}
+
+.appear_half {
+  animation: 3s cubic-bezier(.25, 1, .30, 1) appear_half both;
+  animation-delay: 0.5s;
+}
+
+/* For Profile */
+.profile {
+  background-color: rgb(248 250 252);
+}
+
+/* For HorizontalBar */
+.in-wipe-right-hbar {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  animation-delay: 1.3s;
+}
+
+/* For Projects */
+@keyframes wipe-in-left {
+  from {
+    clip-path: inset(0 0 0 100%);
   }
 
-  /* For nav bar */
-  @keyframes appear {
-    from {
-      opacity: 0;
-    }
-    to{
-      opacity: 100;
-    }
+  to {
+    clip-path: inset(0 0 0 0);
   }
+}
 
-  [transition-style="appear"] {
-    animation: 3s cubic-bezier(.25, 1, .30, 1) appear both;
-    animation-delay: 1.3s;
-  }
+.in-wipe-left {
+  animation: 2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
+}
 
-  /* For percentage bars */
-  @keyframes wipe-in-right {
-    from {
-      clip-path: inset(0 100% 0 0);
-    }
-    to {
-      clip-path: inset(0 0 0 0);
-    }
-  }
-  
-  [transition-style="in:wipe:right"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-  }
+.in-wipe-right-faster {
+  animation: 2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+  animation-delay: 0.5s;
+}
 
-  .in-wipe-right {
-    animation: 3.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-  }
+.project_description {
+  width: 550px;
+  height: 550px;
+}
 
-  /* For About Me */
-  .about_me_passed {
-    background-color: rgb(227, 255, 222);
-  }
+.show_project_description {
+  animation: 0.7s cubic-bezier(.25, 1, .30, 1) appear both;
+}
 
-  .appear_half {
-    animation: 3s cubic-bezier(.25, 1, .30, 1) appear_half both;
-    animation-delay: 0.5s;
-  }
+/* For Experiences */
 
-  /* For Profile */
-  .profile {
-    background-color: rgb(248 250 252);
-  }
-
-  /* For HorizontalBar */
-  .in-wipe-right-hbar {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-    animation-delay: 1.3s;
-  }
-
-  /* For Projects */
-  @keyframes wipe-in-left {
-    from {
-      clip-path: inset(0 0 0 100%);
-    }
-    to {
-      clip-path: inset(0 0 0 0);
-    }
-  }
-  
-  .in-wipe-left {
-    animation: 2s cubic-bezier(.25, 1, .30, 1) wipe-in-left both;
-  }
-
-  .in-wipe-right-faster {
-    animation: 2s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
-    animation-delay: 0.5s;
-  }
-
-  /* For Experiences */
-
-  /* For Contact */
-  .h-half {
-    height: 50vh;
-  }
+/* For Contact */
+.h-half {
+  height: 50vh;
+}
