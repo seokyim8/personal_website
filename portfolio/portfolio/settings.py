@@ -22,13 +22,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-9*bc8_w#$*hh!92cf#o4lt^ivcxvp=!5w7#o)+(tsb1u1o2en&'
 
-ALLOWED_HOSTS = ['18.212.126.33', "127.0.0.1"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['18.212.126.33', "127.0.0.1"]
 
 # Application definition
 
@@ -41,6 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'frontend.apps.FrontendConfig',
     "tailwind"
+
+]
+
+INTERNAL_IPS = [
+
+    "127.0.0.1",
 
 ]
 

@@ -13,19 +13,19 @@ COPY . .
 RUN pip install -r ./requirements.txt --break-system-packages
 
 # Install package.json dependencies
-WORKDIR /web_app/frontend
+WORKDIR /portfolio/frontend
 RUN npm install
 
 # Prepare the sqlite database
-WORKDIR /web_app
+WORKDIR /portfolio
 CMD ["python3", "./manage.py", "makemigrations"]
 CMD ["python3", "./manage.py", "migrate"]
 
 # Start the server & the webpack script
-WORKDIR /web_app/frontend
+WORKDIR /portfolio/frontend
 CMD ["npm", "run", "dev"]
 
-WORKDIR /web_app
+WORKDIR /portfolio
 CMD ["python3", "./manage.py", "runserver", "0.0.0.0:9000"]
 
 # TODO: MIGHT HAVE TO MODIFY PERMISSIONS FOR WEBPACK
