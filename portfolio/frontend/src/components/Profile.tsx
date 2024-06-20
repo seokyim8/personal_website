@@ -5,9 +5,9 @@ const Profile = () => {
     return (
         <div id="home" className="bg-slate-800 antialiased w-full h-screen flex flex-col justify-center selection:bg-teal-300 text-white" transition-style="in:circle:hesitate">
             <div className="flex flex-row justify-center gap-32">
-                <div className="text-3xl font-mono flex flex-col justify-center fill-animation">
+                <div className="text-2xl font-mono flex flex-col justify-center fill-animation">
                     <p>Hello, this is</p>
-                    <p className="font-semibold text-7xl mb-4">Noah Yim</p>
+                    <p className="font-semibold text-6xl mb-4">Noah Yim</p>
                     <div className="font-semibold w-full flex flex-row gap-2 text-lg" transition-style="appear">
                         <div className="rounded-full text-teal-300 bg-teal-400/10 hover:brightness-150 p-2.5 max-w-fit">
                             Data Scientist
@@ -19,8 +19,8 @@ const Profile = () => {
                             Software Engineer
                         </div>
                     </div>
-                    <span className="text-xl mt-6 typed">I build tools for data anlysis, machine learning, </span>
-                    <span className="text-xl mt-1 typed-delayed">and engaging digital experiences.</span>
+                    <span className="text-lg mt-6 typed">I build tools for data anlysis, machine learning, </span>
+                    <span className="text-lg mt-1 typed-delayed">and engaging digital experiences.</span>
                     <div className="flex flex-row justify-between">
                         <HorizontalBar />
                         <a href="#about_me" className="my-auto rounded-full w-fit h-fit p-2 flex flex-row justify-center" transition-style="appear_half">
