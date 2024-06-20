@@ -26,7 +26,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/static/images/Resume for 2024 - Jun 19th, 2024.docx" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition font-semibold">
+                        <a href="/static/images/Resume for 2024 - Jun 20th, 2024.docx" className="py-2 px-2 text-white rounded-lg hover:text-teal-200 hover:bg-slate-800 transition font-semibold">
                             Resume
                         </a>
                     </li>
