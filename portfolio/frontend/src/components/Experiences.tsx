@@ -17,7 +17,7 @@ const Experiences = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col justify-center mx-auto">
+            <div className="flex flex-col justify-center mx-auto p-8">
                 <span className="font-bold text-2xl mb-6">Experiences</span>
                 <div className="flex flex-row font-mono text-sm mt-2 gap-6">
                     <svg className="h-8 w-8 my-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
