@@ -227,8 +227,10 @@ const Projects = ({ projectClicked, setProjectClicked }) => {
                 {/* Fifth Project */}
                 <button id="fifth_project" className={"flex flex-col justify-evenly bg-white shadow-md rounded-xl duration-500 \
                 hover:scale-110 hover:shadow-xl h-96 w-96 pb-2 " + (projectClicked ? "opacity-20" : "opacity-100")} onClick={toggle_project_details}>
-                    <img src="/static/images/black_knight.png"
-                        alt="Product" className="h-80 object-cover rounded-t-xl p-24" />
+                    <div className="flex flex-col justify-center h-80 mx-auto">
+                        <img src="/static/images/black_knight.png"
+                            alt="Product" className="h-48 w-48 rounded-t-xl p-2" />
+                    </div>
                     <div className="px-4 py-2 flex flex-col">
                         <p className="text-lg font-bold text-black capitalize font-mono flex flex-row justify-start">Chess on Android</p>
                         <span className="text-gray-400 mr-3 text-xs capitalize font-mono flex flex-row justify-start">Java, Android Studio</span>
